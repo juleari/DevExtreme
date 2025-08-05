@@ -163,7 +163,7 @@ function resolveFullThemeName(desiredThemeName) {
     if (desiredThemeName in knownThemes) {
       return desiredThemeName;
     }
-
+    // @ts-expect-error
     each(knownThemes, (knownThemeName, themeData) => {
       const knownThemeParts = knownThemeName.split('.');
 
